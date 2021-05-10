@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    height: 100%;
+    background: #f4f6f8;
+}
+/* ================== header ================ */
+.header{
+    background: #ffffff;
+    width: 100vw;
+}
+.header .leftContent{
+    margin-left: 20px;
+}
+.header i{
+    font-size: 31px;
+    color: #015351;
+}
+.header h6{
+    font-size: 14px;
+    color: gray;
+}
+.header .headerTitel{
+    font-size: 29px;
+    color: #015351;
+}
+.headerButton{
+    justify-content: space-between;
+}
+.headerButton button{
+    margin-left: 10px;
+    padding: 8px 30px !important;
+    font-size: 12px;
+    font-weight: 700;
+    background: white;
+    border-radius: 3px;
+    border: 1.4px solid rgb(202, 202, 202);
+}
+.headerButton button i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+/* ======================= bodycontent ==================== */
+.bodyContent{
+    height: 100%;
+    width: 100vw;   
+    margin: 0px 0px !important;
+}
+.bodyContent h1{
+    font-size: 23px;
+    font-weight: 700;
+}
+.bodyContent .bankAccount{
+ width: 480px;
+ background: #ffffff;
+}
+.bankAccount img{
+    width: 100%;
+    height: 210px;
+}
+/* ==================  quick  ================== */
+.bodyContent .quick{
+    width: 480px;
+}
+.quick .quickSummary{
+    margin-bottom: 15px;
+    background: #ffffff;
+}
+.quickSummary .avaCredit {
+    width: 100%;
+    background-color: #defaee;
+    border-radius: 5px;
+}
+.quickSummary .avaCredit i{
+    color: #015351;
+}
+.quickSummary .mapped {
+    width: 100%;
+    background-color: #e7effd;
+    border-radius: 5px;
+}
+.quickSummary .mapped i{
+    color: #2373ff;
+}
+.quickSummary .transcation{
+    width: 100%;
+    background-color: #fceeed;
+    border-radius: 5px;
+}
+.quickSummary .transcation i{
+    color: #ff665c;
+}
+.quickSummary p{
+    font-size: 10px;
+}
+.quickSummary i{
+    font-size: 51px;
+}
+.quick .quickTotal{
+    background: #ffffff;
+}
+/* ================== recentActivity ============ */
+.bodyContent .recentActivity{
+    width: 600px;
+    background: #ffffff;
+}
+.recentActivity .march-div h1{
+    color: #015351;
+    font-size: 10px;
+    background-color: #defaee;
+
+}
+.march-div .march-div-content img{
+    width: 30px;
+    height: 30px;
+    margin: 3px 10px;
+    border-radius: 50%;
+}
+.march-div .march-div-content h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: gray;
+    background-color: none;
+}
+.march-div .march-div-content h3{
+    font-size: 18px;
+    margin: 0px;
+    color: #000000;
+}
+
+.march-div .march-div-content h4{
+    font-size: 18px;
+    margin: 0px;
+    color: #f87c7c;
+}
+.march-div .march-div-content h5{
+    font-size: 12px;
+    color: gray;
+    margin: 0px;
+}
+.march-div .march-div-content h6{
+    margin: 0px;
+    font-size: 10px;
+    color: gray;
+}
+/*=============== expenses================ */
+.bodyContent .expenses{
+    width: 600px;
+}
+.expenses .expensesReport{
+    height: 400px;
+    margin-bottom: 15px;
+    background: #ffffff;
+}
+.expensesReport span{
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+}
+.expenses .totalSummary{
+    height: 480px;
+    background: #ffffff;
+}
+
+@media screen and (max-width: 1450px) {
+    .header i{
+        font-size: 29px;
+    }
+    .header h6{
+        font-size: 10px;
+    }
+    .header .headerTitel{
+        font-size: 20px;
+    }
+    .bodyContent{
+        height: 100%;
+    }
+    .bodyContent h1{
+        padding: 8px;
+        font-size: 14px;
+    }
+    .bodyContent .bankAccount{
+        width: 305px;
+    }
+    .bankAccount img{
+        width: 100%;
+        height: 150px;
+    }
+    .bodyContent .quick{
+        width: 305px;
+    }
+    .bodyContent .recentActivity{
+        width: 350px;
+        height: 700px;
+    }
+    .bodyContent .expenses{
+        width: 350px;
+    }
+    .expenses .expensesReport{
+        height: 280px;
+    }
+    .expenses .totalSummary{
+        height: 280px;
+    }
+    .expenses .graphTiming{
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header i{
+        font-size: 29px;
+    }
+    .header h6{
+        font-size: 10px;
+    }
+    .header .headerTitel{
+        font-size: 20px;
+    }
+    .bodyContent .bankAccount,.quick{
+        width: 50%;
+    }
+    .bodyContent .recentActivity, .expenses{
+        margin-top: 10px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header i{
+        font-size: 29px;
+    }
+    .header h6{
+        font-size: 10px;
+    }
+    .header .headerTitel{
+        font-size: 20px;
+    }
+    .bodyContent .bankAccount, .quick, .recentActivity, .expenses{
+        width: 100%;
+    }
+}
